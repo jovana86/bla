@@ -1,0 +1,8 @@
+com/e2e/LoginTest.java
+ com.e2e.LoginTest
+com/e2e/ManageStudentTest.java
+ com.e2e.ManageStudentTest
+com/e2e/RegistrationTest.java
+ com.e2e.RegistrationTest
+com/e2e/TestBase.java
+ com.e2e.TestBase

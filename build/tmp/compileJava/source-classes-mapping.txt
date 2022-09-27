@@ -1,0 +1,37 @@
+com/e2e/utilities/CommonUtil.java
+ com.e2e.utilities.CommonUtil
+com/e2e/pages/authentication/RegistrationPage.java
+ com.e2e.pages.authentication.RegistrationPage
+com/e2e/pages/authentication/LoginPage.java
+ com.e2e.pages.authentication.LoginPage
+com/e2e/pages/student/StudentEditPage.java
+ com.e2e.pages.student.StudentEditPage
+com/e2e/model/Student.java
+ com.e2e.model.Student
+com/e2e/pages/student/StudentDetailsPage.java
+ com.e2e.pages.student.StudentDetailsPage
+com/e2e/pages/student/StudentDeletePage.java
+ com.e2e.pages.student.StudentDeletePage
+com/e2e/utilities/JsonUtil.java
+ com.e2e.utilities.JsonUtil
+com/e2e/model/TestUser.java
+ com.e2e.model.TestUser
+com/e2e/pages/student/StudentCreatePage.java
+ com.e2e.pages.student.StudentCreatePage
+com/e2e/config/Configuration.java
+ com.e2e.config.Configuration
+com/e2e/driver/DriverManager.java
+ com.e2e.driver.DriverManager
+ com.e2e.driver.DriverManager$1
+com/e2e/driver/DriverType.java
+ com.e2e.driver.DriverType
+com/e2e/utilities/IOUtils.java
+ com.e2e.utilities.IOUtils
+com/e2e/utilities/SeleniumUtilities.java
+ com.e2e.utilities.SeleniumUtilities
+com/e2e/pages/student/StudentPage.java
+ com.e2e.pages.student.StudentPage
+com/e2e/config/ConfigurationManager.java
+ com.e2e.config.ConfigurationManager
+com/e2e/utilities/FrontActionsUtil.java
+ com.e2e.utilities.FrontActionsUtil

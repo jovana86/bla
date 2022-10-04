@@ -8,18 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    public static String ERR_MESSAGE_XPATH = "//li[contains(text(),'%s')]";
+    public static String ERR_MESSAGE_CLASS = "mage-error";
 
     WebDriver driver;
     int waitTime = 0;
 
-    @FindBy(id = "Input_Email")
+    @FindBy(id = "email")
     private WebElement inputEmail;
 
-    @FindBy(id = "Input_Password")
+    @FindBy(id = "pass")
     private WebElement inputPassword;
 
-    @FindBy(xpath = "//button[contains(text(),'Log in')]")
+    @FindBy(id = "send2")
     private WebElement loginButton;
 
     public LoginPage(WebDriver driver, int waitTime) {
@@ -41,12 +41,12 @@ public class LoginPage {
     }
 
     public boolean isUserLogged() {
-        WebElement logOut = driver.findElement(By.id("logout"));
+        WebElement logOut = driver.findElement(By.className("logged-in"));
         return logOut.isDisplayed();
     }
 
     public boolean isErrorMessageShown(String message) {
-        WebElement error = driver.findElement(By.xpath(String.format(ERR_MESSAGE_XPATH, message)));
+        WebElement error = driver.findElement(By.className(ERR_MESSAGE_CLASS));
         return error.isDisplayed();
     }
 }

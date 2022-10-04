@@ -10,27 +10,30 @@ import com.e2e.config.utilities.SeleniumUtilities;
 
 public class RegistrationPage {
 
-    public static String ERR_MESSAGE_XPATH = "//li[contains(text(),'%s')]";
+    public static String ERR_MESSAGE_XPATH = "//div[@class='mage-error']";
 
     WebDriver driver;
     int waitTime = 0;
 
-    @FindBy(id = "Input_Email")
+    @FindBy(id = "email_address")
     private WebElement inputEmail;
 
-    @FindBy(id = "Input_Password")
+    @FindBy(id = "password")
     private WebElement inputPassword;
 
-    @FindBy(id = "Input_ConfirmPassword")
+    @FindBy(id = "password-confirmation")
     private WebElement inputConfirmPassword;
 
-    @FindBy(id = "Input_Name")
+    @FindBy(id = "firstname")
     private WebElement inputName;
+
+    @FindBy(id = "lastname")
+    private WebElement inputLastName;
 
     @FindBy(id = "Input_DOB")
     private WebElement inputDate;
 
-    @FindBy(xpath = "//button[contains(text(),'Register')]")
+    @FindBy(xpath = "//button/span[text()='Create an Account']")
     private WebElement btnRegister;
 
     public RegistrationPage(WebDriver driver, int waitTime) {
@@ -48,12 +51,14 @@ public class RegistrationPage {
     }
 
     public void confirmPassword(String password) {
-        inputPassword.sendKeys(password);
+        inputConfirmPassword.sendKeys(password);
     }
 
-    public void enterFullName(String name) {
-        inputName.sendKeys(name);
+    public void enterFirstName(String firstName) {
+        inputName.sendKeys(firstName);
     }
+
+    public void enterLastName(String lastName) {inputLastName.sendKeys(lastName);}
 
     public void enterBirthDate(String date) {
         Actions actions = new Actions(driver);
@@ -65,7 +70,7 @@ public class RegistrationPage {
     }
 
     public boolean isUserRegistered() {
-        WebElement logOut = driver.findElement(By.id("logout"));
+        WebElement logOut = driver.findElement(By.xpath("//span[@class='logged-in']"));
         return logOut.isDisplayed();
     }
 

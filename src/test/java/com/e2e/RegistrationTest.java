@@ -10,11 +10,7 @@ public class RegistrationTest extends TestBase {
     RegistrationPage registerPage;
     String registrationUrl = "https://magento.softwaretestingboard.com/customer/account/create/";
     public static TestUser testUser;
-//    String username = "test00345@example.com";
-//    String password = "Demo!1234";
-//    String firstName = "Demo";
-//    String lastName = "Cratic";
-    String username = "test011456@example.com";
+    String username = "test391456@example.com";
     String password = "Demo!1234";
     String firstName = "Demo";
     String lastName = "Cratic";

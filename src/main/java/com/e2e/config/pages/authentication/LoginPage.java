@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
     public static String ERR_MESSAGE_CLASS = "mage-error";
+    public static String USER_LOGGED_IN_CLASS = "logged-in";
 
     WebDriver driver;
     int waitTime = 0;
@@ -41,7 +42,7 @@ public class LoginPage {
     }
 
     public boolean isUserLogged() {
-        WebElement logOut = driver.findElement(By.className("logged-in"));
+        WebElement logOut = driver.findElement(By.className(USER_LOGGED_IN_CLASS));
         return logOut.isDisplayed();
     }
 

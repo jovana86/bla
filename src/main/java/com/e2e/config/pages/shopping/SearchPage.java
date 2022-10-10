@@ -13,7 +13,7 @@ import java.time.Duration;
 
 public class SearchPage {
     WebDriver driver;
-    int waitTime = 3;
+    int waitTime = 5;
     public static String JACKET_LIST_XPATH = "//span[@class='product-image-wrapper']";
     public static String SEARCH_RESULT_XPATH = "//dd/a[contains(text(),'jacket')]";
 

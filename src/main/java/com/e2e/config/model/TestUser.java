@@ -4,16 +4,18 @@ public class TestUser {
 
     private String username = "";
     private String password = "";
-    private String name = "";
+    private String firstName = "";
+    private String lastName = "";
     private String birthDate = "";
 
     public TestUser() {
     }
 
-    public TestUser(String username, String password, String name, String birthDate) {
+    public TestUser(String username, String password, String firstName, String lastName) {
         this.username = username;
         this.password = password;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.birthDate = birthDate;
     }
 
@@ -33,12 +35,20 @@ public class TestUser {
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getBirthDate() {
